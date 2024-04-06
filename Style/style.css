@@ -1,0 +1,87 @@
+body {
+    overflow-x: hidden; 
+}
+.header {
+    background-color: #703be7;
+
+
+}
+.logo {
+    padding-left: 50px;
+}
+
+.nav-link {
+    color: white;
+}
+.banner {
+    height: auto;
+    position: relative;
+    width: 100%; 
+    display: block;
+
+}
+
+.moto {
+    background-image: linear-gradient(45deg, #13F97C , #0892d0);
+    padding: 24px 40px 32px 40px;
+}
+.moto-content {
+    height: auto;
+    width: 100%;
+
+}
+.moto-content h1 {
+    font-size: 40px;
+    color: #e2f2fe;
+}
+.button {
+    background-color: #ff9933;
+    color: #e2f2fe;
+}
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
+    transition: all 0.5s;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z' /%3E%3C/svg%3E");
+}
+.accordion {
+    --bs-accordion-active-color: #6B3CC9;
+    --bs-accordion-active-bg: #FAF8FF;
+    --bs-accordion-border-color: #FAF8FF;
+    --bs-accordion-bg: #FAF8FF;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+@media only screen and (max-width: 576px) {
+    .logo {
+        padding-left: 0;
+    }
+    .nav-link {
+        color: #2F2F2F;
+    }
+
+}
+@media only screen and (min-width: 992px) {
+
+    .moto {
+        position: absolute;
+        margin-bottom: 50px;
+        margin-left: 75px;
+    }
+    .moto-content h1 {
+
+        font-size: 40px !important;
+    }
+}
+@media only screen and (min-width: 576px) {
+
+    .moto-content h1 {
+
+        font-size: 50px;
+    }
+}
